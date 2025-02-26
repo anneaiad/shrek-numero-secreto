@@ -43,8 +43,11 @@ body::before {
 
 .container__conteudo {
     display: flex;
-    align-items: center;
-    position: absolute;
+    align-items: left;
+    justify-content: left;
+    width: 100%; /* Garante que ocupe toda a largura */
+    height: 100%; /* Opcional: ajusta a altura */
+    position: absolute; /* Remove `absolute` para que fique dentro do fluxo */
     bottom: 0;
 }
 
@@ -58,7 +61,7 @@ body::before {
     background: #5BDC10;
     padding: 16px 24px;
     width: 100%;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     border: none;
     margin-top: 2rem;
@@ -80,7 +83,7 @@ body::before {
     border: none;
     color: #1875E8;
     padding: 2rem;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 700;
     font-family: 'Inter', sans-serif;
 }
@@ -96,7 +99,7 @@ body::before {
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-size: 48px;
     padding-bottom: 3rem;
 }
 
@@ -106,7 +109,7 @@ button {
 }
 
 .texto__paragrafo {
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -121,7 +124,7 @@ button:disabled {
     }
 
     .container__botao {
-        font-size: 16px;
+        font-size: 18px;
     }
 
 
@@ -131,6 +134,9 @@ button:disabled {
 
     .container__imagem-pessoa {
         display: none;
+       
+        
+        
     }
 
     .container__conteudo {
@@ -141,4 +147,6 @@ button:disabled {
     .container__informacoes {
         padding: 1rem
     }
+    
+     
 }
